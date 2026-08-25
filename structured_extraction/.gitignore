@@ -1,0 +1,14 @@
+# Uploaded PDFs. The two example papers are tracked; nothing else should be.
+example_pdfs/*.pdf
+!example_pdfs/Marshall1929_AnnMagNatHist.pdf
+!example_pdfs/deMedeiros2013Zootaxa.pdf
+my_pdfs/
+
+# Python
+__pycache__/
+
+# Run output
+processed/
+results/
+my_results.csv
+figure_*.png
