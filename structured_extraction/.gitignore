@@ -11,4 +11,5 @@ __pycache__/
 processed/
 results/
 my_results.csv
+my_results.json
 figure_*.png
