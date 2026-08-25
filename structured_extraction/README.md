@@ -10,7 +10,7 @@ We will start with the demo to demonstrate capabilities, and then break it down 
 | --- | --- |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/structured_extraction/demo.ipynb) | **`demo.ipynb`** — one function, three arguments, a table out. Ten minutes, mostly model download. Run this first. |
 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/structured_extraction/workshop.ipynb) | **`workshop.ipynb`** — the session itself. Four sessions building all of it from an empty cell, ending with an agent that decides how to read a page. |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/structured_extraction/hands-on.ipynb) | **`hands-on.ipynb`** — the same pipeline on documents of your own. Every function from the workshop in one block, then your folder, your prompts, your schema. |
+| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/structured_extraction/hands-on.ipynb) | **`hands-on.ipynb`** — the same pipeline on documents of your own, whether PDFs or photos of labels and notes. Every function from the workshop in one block, then your folder, your prompts, your schema, and the JSON and the table it gives back. |
 
 ## The other files
 
@@ -21,8 +21,8 @@ We will start with the demo to demonstrate capabilities, and then break it down 
   you back one table. You can use it on your own folders after the workshop!
 - **`example_pdfs/`** — the two papers we will work on, both taxonomic: a 2013 one
   born digital, and a 1929 one scanned from paper.
-- **`.gitignore`** — keeps your own PDFs and everything the notebooks write
-  (`processed/`, `my_results.csv`) out of the git repository.
+- **`.gitignore`** — keeps your own documents and everything the notebooks write
+  (`processed/`, `my_results.json`, `my_results.csv`) out of the git repository.
 
 ## Models
 
