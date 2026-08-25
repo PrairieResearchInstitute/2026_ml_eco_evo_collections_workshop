@@ -30,13 +30,13 @@ We will use two LLMs during the workshop.
 
 | model | role | size |
 | --- | --- | --- |
-| `qwen3.5:2b` | reasoning, extraction, tool use | 2.7 GB |
+| `qwen3.5:4b` | reasoning, extraction, tool use | 3.4 GB |
 | `deepseek-ocr` | page transcription | 6.7 GB |
 
 `demo.ipynb` uses the bigger `qwen3.5:9b` (6.6 GB) instead, so pull that one too
 if you want to run the demo locally. The 9B and
 [`gemma3:12b`](https://ollama.com/library/gemma3) (8.1 GB) are both more accurate
-than the 2B, and `hands-on.ipynb` lets you switch to either if you have the
+than the 4B, and `hands-on.ipynb` lets you switch to either if you have the
 memory.
 
 ## What you need
