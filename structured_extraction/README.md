@@ -30,8 +30,14 @@ We will use two LLMs during the workshop.
 
 | model | role | size |
 | --- | --- | --- |
-| `qwen3.5:9b` | reasoning, extraction, tool use | 6.6 GB |
+| `qwen3.5:2b` | reasoning, extraction, tool use | 2.7 GB |
 | `deepseek-ocr` | page transcription | 6.7 GB |
+
+`demo.ipynb` uses the bigger `qwen3.5:9b` (6.6 GB) instead, so pull that one too
+if you want to run the demo locally. The 9B and
+[`gemma3:12b`](https://ollama.com/library/gemma3) (8.1 GB) are both more accurate
+than the 2B, and `hands-on.ipynb` lets you switch to either if you have the
+memory.
 
 ## What you need
 
@@ -43,4 +49,4 @@ To run locally instead you need [Ollama](https://ollama.ai) ≥0.32 — earlier
 versions cannot load these models — then `ollama pull` both models above,
 `ollama serve`, and `pip install ollama pymupdf pandas pillow`.
 
-You will need at least 16 GB of local GPU memory. If you have more, you will be able to use more powerful models.
+You will need at least 8 GB of local GPU memory for the two models above, and about 16 GB for the 9B the demo uses. If you have more, you will be able to use more powerful models.
