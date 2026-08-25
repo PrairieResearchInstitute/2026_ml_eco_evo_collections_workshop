@@ -1,46 +1,20 @@
-# Extracting structured data from PDFs with open models
+**NOTE: Workshop Is Currently FULL**. If you want to be on the waitlist, please email [Deborah Paul](https://github.com/debpaul).
+# Hands-on Workshop: Machine learning for ecology and evolution research using natural history collections
 
-The language-model half of the workshop. We will use a free Google Colab session to run everything. 
+Welcome to the gitHub repository for this ML/AI event hosted by the organizing team from the INHS Species File Group at PRI. We're pleased to bring guest instructors [Bruno de Medeiros](https://orcid.org/0000-0003-1663-668X), and [Elizabeth Postema](https://orcid.org/0000-0001-5958-1071), from the Field Museum to offer this hands-on workshop. Together, we will explore machine learning tools that can be used to accelerate research using natural history collections. We will focus on two specific domains: **custom-trained image classification and detection models**, and **using language models to extract structured data from inputs like pdfs or collection labels**. We will rely on user friendly tools to show how to train and deploy image models and how to interact programmatically with large language models. We will discuss pros and cons of cloud-based tools or those that can be run locally, and options for managing costs.
 
-## The notebooks
+- Date: August 26, 2026
+- Where (in person): Forbes 1005. [Google Maps](https://maps.app.goo.gl/Rh1vDuQ6ovRS9ahi7), [Open Street Map](https://www.openstreetmap.org/way/138260147)
+- Time: 900 - 500 PM
+- Instructors: Bruno de Medeiros, Assistant Curator of Insects, Field Museum and Elizabeth Postema, Post Doctoral Research Scientist, Field Museum
+- Helpers: [Matt Yoder](https://github.com/mjy), [Geoff Ower](https://github.com/gdower), [Deborah Paul](https://github.com/debpaul)
 
-We will start with the demo to demonstrate capabilities, and then break it down in steps in the workshop. Finally, hands-on will allow students to try out on their own data.
+- Questions? Please email event organizer and member of the INHS Species File Group, Deborah Paul dlpaul@illinois.edu
 
-| | |
-| --- | --- |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/LLM_session/demo.ipynb) | **`demo.ipynb`** — one function, three arguments, a table out. Ten minutes, mostly model download. Run this first. |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/LLM_session/workshop.ipynb) | **`workshop.ipynb`** — the session itself. Four sessions building all of it from an empty cell, ending with an agent that decides how to read a page. |
-| [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/blob/main/LLM_session/hands-on.ipynb) | **`hands-on.ipynb`** — the same pipeline on documents of your own. Every function from the workshop in one block, then your folder, your prompts, your schema. |
+## Software
+- Please sign up for a [Roboflow](https://roboflow.com/pricing) account (free level). If you need help or have questions about this, please email Elizabeth.
+- From Bruno Medeiros: for his part, everything will be done with [Google Colab](https://colab.research.google.com/) notebooks and free usage, so you will only need a google drive.
+- Please download and install ollama (https://ollama.com/) on your computers and create a free account there. Colab will be the workhorse but Bruno will demonstrate how we could transpose code to a local machine and for ollama cloud, so this will be helpful.
 
-## The other files
-
-- **`pdf_extraction.py`** — the finished pipeline, and the only thing `demo.ipynb`
-  imports. `extract_folder(folder, prompt, schema)` asks a reasoning model, for
-  each PDF, whether that document's own text can be trusted or whether the pages
-  have to be re-read from their images, says what it decided and why, and gives
-  you back one table. You can use it on your own folders after the workshop!
-- **`example_pdfs/`** — the two papers we will work on, both taxonomic: a 2013 one
-  born digital, and a 1929 one scanned from paper.
-- **`.gitignore`** — keeps your own PDFs and everything the notebooks write
-  (`processed/`, `my_results.csv`) out of the git repository.
-
-## Models
-
-We will use two LLMs during the workshop.
-
-| model | role | size |
-| --- | --- | --- |
-| `qwen3.5:9b` | reasoning, extraction, tool use | 6.6 GB |
-| `deepseek-ocr` | page transcription | 6.7 GB |
-
-## What you need
-
-A Google account, and a Colab runtime **with a GPU**
-(Runtime → Change runtime type → T4). Colab sometimes refuses free GPUs at busy
-times; if that happens, pair up with a neighbour.
-
-To run locally instead you need [Ollama](https://ollama.ai) ≥0.32 — earlier
-versions cannot load these models — then `ollama pull` both models above,
-`ollama serve`, and `pip install ollama pymupdf pandas pillow`.
-
-You will need at least 16 GB of local GPU memory. If you have more, you will be able to use more powerful models.
+## Food
+- Please bring your own lunch. We will provide snacks and drinks.
