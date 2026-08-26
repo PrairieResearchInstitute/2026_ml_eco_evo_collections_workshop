@@ -20,7 +20,9 @@ We will start with the demo to demonstrate capabilities, and then break it down 
   have to be re-read from their images, says what it decided and why, and gives
   you back one table. You can use it on your own folders after the workshop!
 - **`example_pdfs/`** — the two papers we will work on, both taxonomic: a 2013 one
-  born digital, and a 1929 one scanned from paper.
+  born digital, and a 1929 one scanned from paper. Both are also
+  [a 2 MB zip](https://github.com/PrairieResearchInstitute/2026_ml_eco_evo_collections_workshop/releases/download/v2026.08.26/example_pdfs.zip)
+  if you want them outside the repository.
 - **`.gitignore`** — keeps your own documents and everything the notebooks write
   (`processed/`, `my_results.json`, `my_results.csv`) out of the git repository.
 
